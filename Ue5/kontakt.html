@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt – Virtuelle Bibliothek</title>
+</head>
+<body>
+
+<header>
+    <h1>📬 Kontaktformular – Virtuelle Bibliothek</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="index.html">Bücher</a></li>
+        <li><a href="Autorenliste.html">Autoren</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Kontaktieren Sie uns</h2>
+    <!-- Formular-Element
+Dies ist der Container, der alle Eingabefelder enthält, die an den Server gesendet werden sollen.POST verwenden, wenn du Dateien hochlädst.-->
+    <form action="testaktion" method="POST" enctype="multipart/form-data">
+        
+        <label for="thema">Thema:*</label>
+        <select id="thema" name="thema" required>
+            <option value="">Bitte wählen</option>
+            <option value="allgemein">Allgemeine Anfrage</option>
+            <option value="problem">Probleme melden</option>
+            <option value="buchanfrage">Buchanfrage</option>
+            <option value="sonstiges">Sonstiges</option>
+        </select>
+        <br><br>
+
+        <label for="vorname">Vorname:*</label>
+        <input type="text" id="vorname" name="vorname" required>
+        <br><br>
+
+        <label for="nachname">Nachname:*</label>
+        <input type="text" id="nachname" name="nachname" required>
+        <br><br>
+
+        <label for="email">E-Mail:*</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="nachricht">Nachricht:*</label>
+        <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+        <br><br>
+<!-- Das <input type="file">-Element ist speziell dafür da, dem Benutzer das Hochladen einer Datei zu ermöglichen-->
+        <label for="datei">Dateianhang (optional):</label>
+        <input type="file" id="datei" name="datei">
+        <br><br>
+
+        <label>
+            <input type="checkbox" id="marketing" name="marketing">
+            Ich stimme der Verwendung meiner Daten zu Marketingzwecken zu.
+        </label>
+        <br><br>
+
+        <button type="submit">Absenden</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Virtuelle Bibliothek | Kontakt: info@bibliothek.at</p>
+</footer>
+
+</body>
+</html>
