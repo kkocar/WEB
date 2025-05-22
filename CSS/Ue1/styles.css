@@ -98,7 +98,7 @@ a {
     text-decoration: none;
    }
    a:hover {
-    color: #2980b9;
+    color: red;
     text-decoration: underline;
    }
 
@@ -125,7 +125,7 @@ aside {
    /* Footer */
 footer {
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem ;
     margin-top: 2rem;
     border-top: 1px solid #e0e0e0;
     color: #777;
@@ -133,6 +133,8 @@ footer {
    }
    .contact-info {
     margin-top: 1rem;
+    
+    
    }
    
    

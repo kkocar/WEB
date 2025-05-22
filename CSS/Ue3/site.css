@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 1em;
+    
+    
+    
+}
+  
+#top {
+    background-color: green;
+    color: white;
+    padding: 0.25em;
+    border-radius: 0.25em;
+}
+
+header {
+    background-color: green;
+    color:white;
+    margin-bottom: 10px;
+    border:1px solid;
+    border-radius: 5px;
+}
+nav li:hover{
+    color:white;
+    background-color: green;
+}
+nav {
+    background-color: none;
+    margin-bottom: 5px;
+    margin-right:10px;
+    display: flex;
+    flex-direction: column;  
+   
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main {
+  
+    padding:10px;
+    
+    
+}
+
+aside {
+    background-color: blue;
+    color:white;
+    padding:10px;
+    border:1px solid;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+    margin-top: 15px;
+    border:1px solid;
+    border-radius: 5px;
+
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+div{
+    margin:15px;
+    margin-left:0;
+      
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+nav, aside, main{
+    flex: 1 1 0;
+}
+
+nav, aside{
+    flex-basis: 10px;
+
+}
+
+   nav li {
+    /* Elemente in einer linie anzeigen */
+    display: block;
+    /* Abstaende */
+    margin: 2px 0;
+    padding: 10px;
+    background-color:#F1F1F1;
+    border:1px solid;
+    border-radius: 5px;
+    
+   }
+
+   body main h1, h2{
+    margin: 15px;
+   }
