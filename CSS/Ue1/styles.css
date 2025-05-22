@@ -27,7 +27,8 @@ header {
     padding: 2rem 0;
     text-align: center;
     border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem #e0e0e0;
+    
    }
    header h1 {
     font-size: 2.5rem;
@@ -62,7 +63,7 @@ main {
     background-color: #fff;
     padding: 2rem;
     margin-bottom: 2rem;
-    border-radius: 5px;
+    border-radius: 50px; /*rundnug am eck*/ 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    }
    article h2 {
@@ -86,7 +87,9 @@ main {
     height: auto;
     display: block;
     margin: 0 auto 1.5rem;
-    border-radius: 5px;
+    border: 5px solid;
+    border-radius: 50px;
+    
    }
 
    /* Links */
