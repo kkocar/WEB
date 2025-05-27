@@ -13,30 +13,41 @@ header {
 
 nav {
     background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 
 nav a {
     margin: 0 15px;   /*space between links in nav bar*/
     text-decoration: none;
-    color: green;
+    color: lightseagreen;
+   
 }
 
 /* Layout for sections with image and text side by side */
 .container {
     display: flex; /* Flexbox for horizontal layout */
+    flex-direction: row;
     justify-content: center; /* Centers the items horizontally */
+    
     gap: 100px; /* Space between the image and text */
 }
 
 .container img {
-    max-width: 100%;
-    height: auto;
+    max-width: auto;
+    height: 300px;
+    
 }
 
 .places {
     display: flex; /* Align text horizontally if you want items inline */
     flex-direction: column; /* Keeps the list in a vertical column */
     gap: 10px; /* Adds spacing between the list items */
+    
+}
+.places p{
+    border:none;
 }
 
 a {
@@ -49,20 +60,34 @@ a:hover {
   color:red;
 }
 
+ p{
+    text-align: center;
+    margin: 25px;
+    padding: 15px;
+    border:solid
+}
+footer p{
+    border:none;
+}
+
 h3 {
     text-align: center;
     font-size: 20px;
 }
 
-p {text-align: center;
-}
+
  
-li{text-align: left;
+li{
+background-color:lightgoldenrodyellow;
+    text-align: auto;
   margin-bottom: 10px;
+  list-style:none;
+  display:flexbox;
+
 }
 
 footer {
-    background-color: green;
+    background-color: lightseagreen;
     text-align: center;
     padding: 10px;
     width: 100%;
