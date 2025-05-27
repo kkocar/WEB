@@ -31,19 +31,19 @@ nav a {
     flex-direction: row;
     justify-content: center; /* Centers the items horizontally */
     
-    gap: 100px; /* Space between the image and text */
+    gap: 40px; /* Space between the image and text */
 }
 
 .container img {
-    max-width: auto;
-    height: 300px;
+    max-width: 400px;
+    height: auto;
     
 }
 
 .places {
     display: flex; /* Align text horizontally if you want items inline */
     flex-direction: column; /* Keeps the list in a vertical column */
-    gap: 10px; /* Adds spacing between the list items */
+    gap: 8px; /* Adds spacing between the list items */
     
 }
 .places p{
