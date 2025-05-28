@@ -108,9 +108,9 @@ nav a.active {
 /* Bilder */
 .content article img {
   display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto 1rem;
+  width: 120px;              /* macht das Bild kleiner */
+  height: auto;              /* behält das Seitenverhältnis */
+  margin: 0 auto 1rem auto;  /* zentriert das Bild horizontal */
 }
 
 img {
