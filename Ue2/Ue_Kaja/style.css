@@ -227,4 +227,54 @@ header iframe {
   border: none;
   border-radius: 10px;
 }
+
+/* Header base */
+header {
+  position: relative;          /* Needed for absolute positioning inside */
+  background-color: #e9f0f7;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+/* Title */
+header h1 {
+  font-size: 1.8em;
+  margin: 0 0 15px 0;
+}
+
+/* Centered logo image */
+header img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Small iframe top-right */
+header iframe {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header iframe {
+    width: 120px;
+    height: 120px;
+    top: 5px;
+    right: 5px;
+  }
+  
+  header img {
+    width: 140px;
+  }
+}
+
+
 }
