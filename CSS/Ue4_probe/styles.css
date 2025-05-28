@@ -1,8 +1,10 @@
+/* Basis-Reset und Grundschrift */
 body, nav, ul, li {
   margin: 0;
   font-family: Helvetica, sans-serif;
 }
 
+/* Hero-Bereich */
 .hero {
   background-image: url('images/splash-2.png');
   background-size: cover;
@@ -10,56 +12,47 @@ body, nav, ul, li {
   padding: 10rem 0;
 }
 
-.hero-title {
+.hero-title,
+.hero-text {
   font-size: 3rem;
   color: whitesmoke;
   margin: 1rem 0;
   padding: 2rem 0;
-  background: rgba(.3, .3, .3, .3);
+  background: rgba(0, 0, 0, 0.5); /* angepasst für bessere Lesbarkeit */
 }
 
 .hero-text {
   font-size: 1.4rem;
-  color: whitesmoke;
-  background: rgba(.3, .3, .3, .3);
-  padding: 2rem 0;
 }
 
-
-body h2, p{
+/* Typografie */
+body h2, p {
   color: grey;
-  
 }
 
-h1{
-  color:darkslategray
+h1 {
+  color: darkslategray;
 }
 
- h2{
-  color: lightslatgray;
-  margin:0 0 1rem;
-  
-}
-h3,p{
-  color:gray;
+h2 {
+  color: lightslategrey;
+  margin: 0 0 1rem;
 }
 
+h3, p {
+  color: gray;
+}
 
-header{
+/* Header */
+header {
   background-color: grey;
   border-bottom: solid black 2px;
   text-align: center;
- 
 }
 
-footer{
-  background-color: rgba(47, 112, 233, 0.727);
-padding: 10px;
-text-align: center;
-
-}
-footer p{
-  color: white;
+/* Navigation */
+nav {
+  padding: 1rem;
 }
 
 nav ul {
@@ -71,44 +64,67 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav{
-  padding:1rem
-  
-}
-
 nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  margin:15px;
+  margin: 15px;
 }
 
-.content{
-  display: flex;
-  gap:15px;
-  margin:15px;
+nav a.active {
+  color: lightgreen; /* aktiver Link */
 }
 
-article{
-  display:flex;
-  flex-direction: column;
-  background-color: lightgrey;
-padding: 20px;
-}
-
-.menu-link:hover{
+.menu-link:hover {
   color: aquamarine;
 }
 
-.content article img{
+/* Inhalt */
+.content {
+  display: flex;
+  gap: 2rem; /* erweitert für mehr Abstand */
+  margin: 2rem;
+}
+
+.content article {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.content h3 {
+  color: darkslategray;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.content article a {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Bilder */
+.content article img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin:0 auto 1rem;
-
-
+  margin: 0 auto 1rem;
 }
 
+img {
+  width: 200px;
+}
 
-img{
-   width=200px;}
+/* Footer */
+footer {
+  background-color: rgba(47, 112, 233, 0.727);
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  font-size: 0.9rem;
+}
