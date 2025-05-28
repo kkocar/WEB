@@ -52,6 +52,16 @@ header{
  
 }
 
+footer{
+  background-color: rgba(47, 112, 233, 0.727);
+padding: 10px;
+text-align: center;
+
+}
+footer p{
+  color: white;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -98,11 +108,6 @@ padding: 20px;
 
 
 }
-.content article{
-  
-
-}
-
 
 
 img{
