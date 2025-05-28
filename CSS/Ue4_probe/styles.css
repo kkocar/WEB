@@ -91,7 +91,7 @@ nav a.active {
 
 .content article {
   display: flex;
-  flex-direction: colimn;
+  flex-direction: column;
   background-color: lightgrey;
   padding: 1.5rem;
   border-radius: 5px;
