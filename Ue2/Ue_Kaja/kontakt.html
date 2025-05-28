@@ -33,22 +33,22 @@ enctype="multipart/form-data" - Gibt das Datenformat an, in dem die Informatione
     <form action="testaktion" method="POST" enctype="multipart/form-data">
    <!-- kategorie inerhalb eines formulars-->
 <fieldset>     
-        <label for="thema">Thema:*</label>
+        <label for="thema">About:*</label>
         <select id="thema" name="thema" required>
-            <option value="">Bitte wählen</option>
-            <option value="allgemein">Allgemeine Anfrage</option>
-            <option value="problem">Probleme melden</option>
-            <option value="buchanfrage">Buchanfrage</option>
-            <option value="sonstiges">Sonstiges</option>
+            <option value="">Please select</option>
+            <option value="allgemein">Request for information</option>
+            <option value="problem">Problems</option>
+            <option value="buchanfrage">Book inquiry</option>
+            <option value="sonstiges">Others</option>
         </select>
         <br><br>
 <!-- kategorie inerhalb eines formulars-->
 
-        <label for="vorname">Vorname:*</label>
+        <label for="vorname">Surrname:*</label>
         <input type="text" id="vorname" name="vorname" required>
         <br><br>
     
-        <label for="nachname">Nachname:*</label>
+        <label for="nachname">Name:*</label>
         <input type="text" id="nachname" name="nachname" required>
         <br><br>
 
@@ -56,12 +56,12 @@ enctype="multipart/form-data" - Gibt das Datenformat an, in dem die Informatione
         <input type="email" id="email" name="email" required>
         <br><br>
 
-        <label for="nachricht">Nachricht:*</label>
+        <label for="nachricht">Message:*</label>
         <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
         <br><br>
     </fieldset>
 <!-- Das <input type="file">-Element ist speziell dafür da, dem Benutzer das Hochladen einer Datei zu ermöglichen-->
-        <label for="datei">Dateianhang (optional):</label>
+        <label for="datei">Attach file (optional):</label>
         <input type="file" id="datei" name="datei">
         <br><br>
 
@@ -71,12 +71,12 @@ enctype="multipart/form-data" - Gibt das Datenformat an, in dem die Informatione
         </label>
         <br><br>
 
-        <button type="submit">Absenden</button>
+        <button type="submit">Send</button>
     </form>
 </main>
 
 <footer>
-    <p>&copy; 2025 Virtuelle Bibliothek | Kontakt: info@bibliothek.at</p>
+    <p>&copy; 2025 Virtual Library | Contact: info@library.com</p>
 </footer>
 
 </body>
