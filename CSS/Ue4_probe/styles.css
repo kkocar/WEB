@@ -87,7 +87,6 @@ nav a.active {
   margin: 2rem auto;
   padding: 0 2rem;
   flex-wrap: wrap;
-  max-width: 1200px;
   box-sizing: border-box;
 }
 
