@@ -82,13 +82,16 @@ nav a.active {
 /* Inhalt */
 .content {
   display: flex;
-  gap: 2rem; /* erweitert für mehr Abstand */
-  margin: 2rem;
+  justify-content: center; /* zentriert die Artikel horizontal */
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;       /* begrenzt die Breite */
+  flex-wrap: wrap;         /* sorgt für Umbruch bei kleinen Bildschirmen */
 }
 
 .content article {
   display: flex;
-  flex-direction: column;
+  flex-direction: colimn;
   background-color: lightgrey;
   padding: 1.5rem;
   border-radius: 5px;
