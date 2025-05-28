@@ -18,7 +18,7 @@ body, nav, ul, li {
   color: whitesmoke;
   margin: 1rem 0;
   padding: 2rem 0;
-  background: rgba(0, 0, 0, 0.5); /* angepasst für bessere Lesbarkeit */
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-text {
@@ -72,7 +72,7 @@ nav a {
 }
 
 nav a.active {
-  color: lightgreen; /* aktiver Link */
+  color: lightgreen;
 }
 
 .menu-link:hover {
@@ -82,11 +82,11 @@ nav a.active {
 /* Inhalt */
 .content {
   display: flex;
-  justify-content: center; /* zentriert die Artikel horizontal */
+  justify-content: center;
   gap: 2rem;
   margin: 2rem auto;
-  max-width: 1200px;       /* begrenzt die Breite */
-  flex-wrap: wrap;         /* sorgt für Umbruch bei kleinen Bildschirmen */
+  max-width: 1200px;
+  flex-wrap: wrap;
 }
 
 .content article {
@@ -95,6 +95,10 @@ nav a.active {
   background-color: lightgrey;
   padding: 1.5rem;
   border-radius: 5px;
+  width: 300px; /* Feste Breite für einheitliches Layout */
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
 }
 
 .content h3 {
@@ -111,13 +115,9 @@ nav a.active {
 /* Bilder */
 .content article img {
   display: block;
-  width: 120px;              /* macht das Bild kleiner */
-  height: auto;              /* behält das Seitenverhältnis */
-  margin: 0 auto 1rem auto;  /* zentriert das Bild horizontal */
-}
-
-img {
-  width: 200px;
+  width: 120px;
+  height: auto;
+  margin: 0 auto 1rem auto;
 }
 
 /* Footer */
@@ -131,3 +131,4 @@ footer p {
   color: white;
   font-size: 0.9rem;
 }
+
