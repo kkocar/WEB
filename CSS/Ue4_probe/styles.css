@@ -82,31 +82,33 @@ nav a.active {
 /* Inhalt */
 .content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
   margin: 2rem auto;
-  max-width: 1200px;
+  padding: 0 2rem;
   flex-wrap: wrap;
-}
-
-.content article {
-  display: flex;
-  flex-direction: column;
-  background-color: lightgrey;
-  padding: 1.5rem;
-  border-radius: 5px;
-  width: 300px; /* Feste Breite für einheitliches Layout */
+  max-width: 1200px; /* Begrenzung auf Inhaltsbreite */
   box-sizing: border-box;
-  align-items: center;
-  text-align: center;
 }
 
+/* Artikel-Boxen */
+.content article {
+  flex: 1;
+  min-width: 250px;
+  padding: 1.5rem;
+  background-color: lightgrey;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Überschriften */
 .content h3 {
   color: darkslategray;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
+/* Links */
 .content article a {
   color: blue;
   text-decoration: underline;
@@ -117,7 +119,7 @@ nav a.active {
   display: block;
   width: 120px;
   height: auto;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 1rem;
 }
 
 /* Footer */
@@ -132,3 +134,19 @@ footer p {
   font-size: 0.9rem;
 }
 
+/* Responsive Verhalten */
+@media (max-width: 900px) {
+  .content article {
+    flex: 0 0 48%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content article {
+    width: 100%;
+  }
+}
