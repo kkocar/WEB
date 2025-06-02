@@ -59,7 +59,8 @@ header iframe {
 
 /* === Navigation === */
 nav {
-  width: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav ul {
