@@ -166,9 +166,8 @@ form label {
   display: block;
   width: 140px;       /* fester Platz für Labels */
   font-weight: bold;
-  vertical-align: top;
   margin-bottom: 10px;
-  color: #0077cc;
+  color: black;
 }
 
 
