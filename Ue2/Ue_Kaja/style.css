@@ -225,6 +225,7 @@ main section ul li a:hover {
   }
 
   header iframe {
+    position: static;
     width: 120px;
     height: 120px;
     top: 60px;
