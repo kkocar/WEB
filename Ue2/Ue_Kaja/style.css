@@ -223,7 +223,10 @@ main section ul li a:hover {
     gap: 15px;
     align-items: center;
   }
-
+  
+header{
+  flex-direction: column;
+}
   header iframe {
     position: static;
     width: 120px;
