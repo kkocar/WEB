@@ -201,9 +201,10 @@ main section ul li a:hover {
 /* === Responsivität === */
 @media (max-width: 600px) {
   nav ul {
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    gap:15px;
+    justify-content: center;
   }
 
   header iframe {
