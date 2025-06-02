@@ -147,11 +147,32 @@ footer {
 }
 
 /* === Formular === */
+/* === Formular === */
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: #eef6f6;
+  padding: 20px;
+  border-radius: 10px;
+ 
 }
+form fieldset {
+  border-style: none;
+  border-radius: 8px;
+  padding: 15px 20px;
+  
+}
+
+form label {
+  display: block;
+  width: 140px;       /* fester Platz für Labels */
+  font-weight: bold;
+  vertical-align: top;
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
 
 input, textarea, select, button {
   padding: 10px;
