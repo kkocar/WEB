@@ -114,11 +114,15 @@ nav a.active {
 
 /* Bilder */
 .content article img {
-  display: block;
+
   width: 120px;
-  height: auto;
-  margin: 0 auto 1rem;
+  height: 80px;
+  border-radius: 20px/5px;
+
+
+  
 }
+
 
 /* Footer */
 footer {
