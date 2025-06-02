@@ -237,9 +237,13 @@ main section ul li a:hover {
     width: 180px;
   }
 
-  main section ul {
+  main section ul li  {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
+  
   }
+
+  
 }
