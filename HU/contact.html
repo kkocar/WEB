@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Leila Slimani Fan Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    Leila Slimani Fan Page
+  </header>
+
+  <!-- NAVIGATION -->
+ <nav>
+  <ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="author.html">Author</a></li>
+    <li><a href="gallery.html">Bookcover Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <h2>Contact Us</h2>
+    <p>If you have questions, feedback or suggestions, feel free to contact us below.</p>
+
+    <!-- FORMULAR -->
+    <form action="test" method="POST" enctype="multipart/form-data">
+      
+      <!-- FIELDSET for grouping -->
+      <fieldset>
+        <legend>Contact Form</legend>
+
+        <!-- Thema auswählen -->
+        <label for="thema">Topic:*</label>
+        <select id="thema" name="thema" required>
+          <option value="">Please choose</option>
+          <option value="general">General Inquiry</option>
+          <option value="problem">Report a Problem</option>
+          <option value="book">Book Request</option>
+          <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <!-- Vorname -->
+        <label for="vorname">First Name:*</label>
+        <input type="text" id="vorname" name="vorname" required>
+        <br><br>
+
+        <!-- Nachname -->
+        <label for="nachname">Last Name:*</label>
+        <input type="text" id="nachname" name="nachname" required>
+        <br><br>
+
+        <!-- E-Mail -->
+        <label for="email">E-Mail:*</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Nachricht -->
+        <label for="nachricht">Message:*</label>
+        <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+        <br><br>
+      </fieldset>
+
+      <!-- Datei-Upload -->
+      <label for="datei">Attachment (optional):</label>
+      <input type="file" id="datei" name="datei">
+      <br><br>
+
+      <!-- Checkbox Zustimmung -->
+      <div class="checkbox-group">
+  <input type="checkbox" id="marketing" name="marketing">
+  <label for="marketing">I agree to the use of my data for marketing purposes.</label>
+</div>
+
+      <!-- Submit Button -->
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Leila Slimani Fan Page | Made with passion for literature
+  </footer>
+
+</body>
+</html>

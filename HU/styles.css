@@ -1,0 +1,224 @@
+
+/* --- GLOBAL RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- BODY --- */
+body {
+  font-family: Georgia, sans-serif; /* Elegant modern font */
+  background-color: #f4e4d4; /* Moroccan sand beige */
+  color: #333;
+  
+}
+
+nav, footer, h1, h2, p{
+  font-family: Verdana, sans-serif;
+}
+
+/* --- HEADER --- */
+header {
+  background-color: #f6c6b5; /* Soft coral */
+  padding: 25px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #333;
+}
+.site-logo {
+  height: 160px;
+  width: max-content;
+  border-radius: 8px;
+}
+
+/* --- NAVIGATION BAR --- */
+/* NAVIGATION BAR STYLES */
+nav {
+  background-color: #f3d8c7; /* soft coral tone */
+  padding: 10px 0;
+}
+
+/* Style the list container */
+.navbar {
+  list-style: none;              /* Remove bullet points */
+  display: flex;                 /* Make horizontal */
+  flex-wrap: wrap;               /* Allow wrap on smaller screens */
+  justify-content: space-around;/* Even spacing */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style each navigation link */
+.navbar li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 10px 15px;
+  
+}
+
+/* Hover effect */
+.navbar li a:hover {
+  background-color: #e4c3b0; /* slightly darker coral */
+  color: #000;
+  border-radius: 6px;
+}
+
+/* --- MAIN CONTAINER --- */
+main {
+  max-width: 1000px;            /* The main content area will not get wider than 1000px, even on big screens */
+  margin: 20px auto;            /* Adds 20px space above and below, and centers the main area horizontally */
+  padding: 20px;                /* Adds 20px space inside the main box (top, right, bottom, left) */
+  background-color: #fef8f2;    /* Very light pastel background to make content easy on the eyes */
+  border-radius: 10px;          /* Slightly rounded corners for a softer look */
+  box-shadow: 0 0 5px rgba(199, 7, 7, 0.253); /* Adds a soft red shadow around the box for depth */
+}
+
+aside {
+  width: 50%;                        /* Nicht volle Breite – angenehmer auf großen Bildschirmen */
+  margin: 30px auto;                 /* Zentriert mit Abstand nach oben/unten */
+  padding: 15px;
+  background-color: #f3ece3;         /* Heller, warmer Hintergrund */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul,li {
+  list-style-type: none; /* removes dots */
+  margin-top: 10px;
+}
+
+
+/* --- ARTICLE --- */
+article {
+  margin-bottom: 20px;
+}
+
+p{
+    padding: 5px;
+}
+
+p a{
+    background-color: #f3d8c7;
+    color: black;
+}
+/* --- BLOCKQUOTE --- */
+blockquote {
+  border-left: 4px solid #888;
+  padding-left: 15px;
+  color: #666;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+/* --- FORM --- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: auto;
+  padding: 10px;
+  
+}
+
+/* --- FORM ELEMENTS --- */
+label {
+  font-weight: 500;
+}
+input, textarea {
+  background-color: #f2f0ed;
+    padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 10px;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+/* --- BUTTON --- */
+button {
+  padding: 10px;
+  background-color: #c8e7e2;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+button:hover {
+  background-color: #d8e2b8;
+}
+
+/* --- GALLERY --- */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  margin-top: 20px;
+}
+.gallery-img {
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(162, 23, 23, 0.618);
+  
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+/* Checkbox styling - aligned left, inline */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #f6c6b5;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 40px;
+}
+
+/* Style for the author's photo */
+.author-photo {
+  display: block;          /* Shows the image as a block element (not inline) */
+  margin: 30px auto;       /* Adds space above and below, and centers image horizontally */
+  max-width: 250px;        /* Image will not grow larger than 250px */
+  width: 80%;              /* Image will take up 80% of its container on small screens */
+  height: auto;            /* Keeps the original image shape (no stretching) */
+
+  border-radius: 16px;     /* Makes the corners round */
+  padding: 10px;           /* Adds space inside the image box (around the image) */
+  
+  background-color: #fdf5ee; /* Light pastel background behind the image */
+  border: 2px solid #f3d8c7; /* Soft border in a Moroccan-style pastel color */
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds a soft shadow for a lifted look */
+}
+
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gallery-img {
+    width: 100px;
+  }
+}
