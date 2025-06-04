@@ -179,7 +179,7 @@ button:hover {
   
 }
 .gallery-img:hover {
-  transform: scale(3);
+  transform: scale(2.4);
 }
 /* Checkbox styling - aligned left, inline */
 .checkbox-group {
