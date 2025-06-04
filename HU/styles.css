@@ -70,7 +70,7 @@ main {
   max-width: 1000px;               /* Maximale Breite des Hauptbereichs */
   margin: 10px auto;               /* Abstand oben/unten + zentriert horizontal */
   padding: 10px;                   /* Innenabstand */
-  background-color: #fef8f2;      /* Heller, angenehmer Hintergrund */
+  background-color: #f5eadf;      /* Heller, angenehmer Hintergrund */
   border-radius: 10px;             /* Abgerundete Ecken */
   box-shadow: 0 0 5px rgba(199, 7, 7, 0.25); /* Leichter roter Schatten für Tiefe */
 }
