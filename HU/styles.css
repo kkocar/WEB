@@ -1,198 +1,193 @@
-
 /* --- GLOBAL RESET --- */
+/* Entfernt standardmäßige Abstände und sorgt dafür, dass Padding und Border zur Gesamtgröße eines Elements gezählt werden */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0;           /* Kein äußerer Abstand */
+  padding: 0;          /* Kein innerer Abstand */
+  box-sizing: border-box; /* Padding und Border gehören zur Elementbreite/-höhe */
 }
 
 /* --- BODY --- */
 body {
-  font-family: Georgia, sans-serif; /* Elegant modern font */
-  background-color: #f4e4d4; /* Moroccan sand beige */
-  color: #333;
-  
+  font-family: Georgia, sans-serif; /* Schriftart für den gesamten Text */
+  background-color: #f4e4d4;        /* Hintergrundfarbe des gesamten Dokuments (sandfarbener Ton) */
+  color: #333;                      /* Textfarbe (dunkelgrau für gute Lesbarkeit) */
 }
 
-nav, footer, h1, h2, p{
-  font-family: Verdana, sans-serif;
-  margin-bottom: 5px;
+/* Schriftarten und Abstände für wichtige Elemente */
+nav, footer, h1, h2, p {
+  font-family: Verdana, sans-serif; /* Andere Schriftart für Navigation, Überschriften und Text */
+  margin-bottom: 5px;                /* Kleiner Abstand unter diesen Elementen */
 }
 
 /* --- HEADER --- */
 header {
-  background-color: #f6c6b5; /* Soft coral */
-  padding: 25px;
-  text-align: center;
-  font-size: 45px;
-  font-weight: 700;
-  color: #333;
+  background-color: #f6c6b5; /* Hintergrundfarbe des Kopfbereichs (sanftes Korall) */
+  padding: 25px;             /* Innenabstand rundherum */
+  text-align: center;        /* Text zentrieren */
+  font-size: 45px;           /* Große Schriftgröße */
+  font-weight: 700;          /* Fettdruck */
+  color: #333;               /* Textfarbe */
 }
+
+/* Logo-Bild im Header */
 .site-logo {
-  height: 160px;
-  width: max-content;
-  border-radius: 8px;
+  height: 160px;          /* Höhe des Logos */
+  width: max-content;     /* Breite so groß wie Inhalt */
+  border-radius: 8px;     /* Abgerundete Ecken */
 }
 
-/* --- NAVIGATION BAR --- */
-/* NAVIGATION BAR STYLES */
+/* --- NAVIGATION --- */
 nav {
-  background-color: #f3d8c7; /* soft coral tone */
-  padding: 10px 0;
+  background-color: #f3d8c7; /* Hintergrundfarbe der Navigation (helles Korall) */
+  padding: 10px 0;            /* Vertikaler Innenabstand */
 }
 
-/* Style the list container */
+/* Navigation als horizontale Liste mit flexbox */
 .navbar {
-  list-style: none;              /* Remove bullet points */
-  display: flex;                 /* Make horizontal */
-  flex-wrap: wrap;               /* Allow wrap on smaller screens */
-  justify-content: space-around;/* Even spacing */
-  margin: 0;
-  padding: 0;
+  list-style: none;           /* Entfernt Aufzählungszeichen */
+  display: flex;              /* Horizontal anordnen */
+  flex-wrap: wrap;            /* Zeilenumbruch bei kleinerem Bildschirm */
+  justify-content: space-around; /* Elemente gleichmäßig verteilen */
 }
 
-/* Style each navigation link */
+/* Links in der Navigation */
 .navbar li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  padding: 10px 15px;
-  
+  text-decoration: none;      /* Entfernt Unterstreichung */
+  color: #333;                /* Dunkle Schriftfarbe */
+  font-weight: 500;           /* Mittlere Schriftstärke */
+  padding: 10px 15px;         /* Innenabstand für Klickbereich */
 }
 
-/* Hover effect */
+/* Hover-Effekt für Navigation-Links */
 .navbar li a:hover {
-  background-color: #e4c3b0; /* slightly darker coral */
-  color: #000;
-  border-radius: 6px;
+  background-color: #e4c3b0;  /* Hintergrundfarbe beim Überfahren */
+  color: #000;                /* Textfarbe beim Hover */
+  border-radius: 6px;         /* Abgerundete Ecken beim Hover */
 }
 
 /* --- MAIN CONTAINER --- */
 main {
-  max-width: 1000px;            /* The main content area will not get wider than 1000px, even on big screens */
-  margin: 10px auto;            /* Adds 20px space above and below, and centers the main area horizontally */
-  padding: 10px;                /* Adds 20px space inside the main box (top, right, bottom, left) */
-  background-color: #fef8f2;    /* Very light pastel background to make content easy on the eyes */
-  border-radius: 10px;          /* Slightly rounded corners for a softer look */
-  box-shadow: 0 0 5px rgba(199, 7, 7, 0.253); /* Adds a soft red shadow around the box for depth */
+  max-width: 1000px;               /* Maximale Breite des Hauptbereichs */
+  margin: 10px auto;               /* Abstand oben/unten + zentriert horizontal */
+  padding: 10px;                   /* Innenabstand */
+  background-color: #fef8f2;      /* Heller, angenehmer Hintergrund */
+  border-radius: 10px;             /* Abgerundete Ecken */
+  box-shadow: 0 0 5px rgba(199, 7, 7, 0.25); /* Leichter roter Schatten für Tiefe */
 }
 
+/* --- ASIDE --- */
 aside {
-  width: 50%;                        /* Nicht volle Breite – angenehmer auf großen Bildschirmen */
-  margin: 30px auto;                 /* Zentriert mit Abstand nach oben/unten */
-  padding: 15px;
-  background-color: #f3ece3;         /* Heller, warmer Hintergrund */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;                /* Maximalbreite etwas kleiner als main */
+  margin: 30px auto;               /* Abstand oben/unten + zentriert */
+  padding: 15px;                   /* Innenabstand */
+  background-color: #f3ece3;      /* Heller, warmer Hintergrund */
+  border-radius: 10px;             /* Abgerundete Ecken */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sanfter Schatten */
 }
 
-ul,li {
-  list-style-type: none; /* removes dots */
-  margin-top: 10px;
+/* --- LISTEN --- */
+ul, li {
+  list-style: none; /* Entfernt Punkte bei Listen */
+  margin-top: 10px; /* Abstand nach oben */
 }
 
-
-/* --- ARTICLE --- */
+/* --- ARTIKEL --- */
 article {
-  margin-bottom: 20px;
-  margin-top: 8px;
+  margin: 8px 0 20px; /* Oben 8px, unten 20px Abstand */
 }
 
-p{
-    padding: 10px;
+/* --- ABSÄTZE --- */
+p {
+  padding: 10px; /* Innenabstand für besseren Lesefluss */
 }
 
-p a{
-    background-color: #f3d8c7;
-    color: black;
+/* Links in Absätzen mit besonderem Hintergrund */
+p a {
+  background-color: #f3d8c7; /* Heller Korall-Hintergrund */
+  color: black;              /* Schwarze Schrift */
 }
+
 /* --- BLOCKQUOTE --- */
 blockquote {
-  border-left: 4px solid #888;
-  padding-left: 15px;
-  color: #666;
+  border-left: 4px solid #888; /* Linker Rand als Markierung */
+  padding-left: 15px;          /* Abstand innen links */
+  color: #666;                 /* Grau und kursiv für Zitate */
   font-style: italic;
-  margin: 20px 0;
+  margin: 20px 0;              /* Abstand oben und unten */
 }
 
+/* --- ZENTRIERTE BILDER --- */
 .centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 150px;
-  border-radius: 10px;
+  display: block;          /* Blockelement, damit margin funktioniert */
+  margin: 10px auto 20px; /* Zentriert mit Abstand oben und unten */
+  width: 150px;            /* Feste Bildbreite */
+  border-radius: 10px;     /* Abgerundete Ecken */
 }
 
-/* --- FORM --- */
+/* --- FORMULAR --- */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: auto;
-  padding: 10px;
-  
+  display: flex;           /* Flexbox für einfache Anordnung */
+  flex-direction: column;  /* Elemente untereinander */
+  gap: 15px;               /* Abstand zwischen Elementen */
+  padding: 10px;           /* Innenabstand */
 }
 
-/* --- FORM ELEMENTS --- */
+/* --- FORM ELEMENTE --- */
 label {
-  font-weight: 500;
+  font-weight: 500;        /* Fettgedruckte Beschriftung */
 }
+
 input, textarea {
-  background-color: #f2f0ed;
-    padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 10px;
-  width: 100%;
-  font-family: sans-serif;
+  background-color: #f2f0ed; /* Heller Hintergrund */
+  padding: 10px;             /* Innenabstand */
+  border: 1px solid #ccc;    /* Hellgrauer Rahmen */
+  border-radius: 4px;        /* Abgerundete Ecken */
+  font-size: 10px;           /* Kleine Schrift */
+  width: 100%;               /* Breite an Container anpassen */
+  font-family: sans-serif;   /* Schriftart für Eingabe */
 }
 
 /* --- BUTTON --- */
 button {
   padding: 10px;
-  background-color: #c8e7e2;
-  color: #333;
+  background-color: #c8e7e2; /* Hellblau-grüner Hintergrund */
+  color: #333;               /* Dunkle Schrift */
   font-weight: bold;
-  border: none;
+  border: none;              /* Kein Rahmen */
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer;           /* Maus zeigt Hand */
   font-family: sans-serif;
 }
+
+/* Hover-Effekt für Button */
 button:hover {
-  background-color: #d8e2b8;
+  background-color: #d8e2b8; /* Helleres Grün beim Hover */
 }
 
-/* --- GALLERY --- */
+/* --- GALERIE --- */
 .gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 15px;
+  display: flex;             /* Flexbox für Bildergalerie */
+  flex-wrap: wrap;           /* Zeilenumbruch bei Bedarf */
+  justify-content: space-around; /* Abstand um Bilder */
+  gap: 15px;                 /* Abstand zwischen Bildern */
   margin-top: 20px;
 }
+
 .gallery-img {
-  width: 150px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(162, 23, 23, 0.618);
-  
+  width: 150px;              /* Bildgröße */
+  border-radius: 8px;        /* Abgerundete Ecken */
+  box-shadow: 0 0 5px rgba(162, 23, 23, 0.62); /* Roter Schatten */
 }
+
+/* Bild wird größer beim Hover */
 .gallery-img:hover {
   transform: scale(2.4);
 }
-/* Checkbox styling - aligned left, inline */
-.checkbox-group {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Align to the left */
-  gap: 10px;
-  margin-bottom: 20px;
-}
+
 
 /* --- FOOTER --- */
 footer {
-  background-color: #f6c6b5;
+  background-color: #f6c6b5; /* Gleiche Farbe wie Header */
   text-align: center;
   padding: 15px;
   font-size: 0.9rem;
@@ -200,37 +195,32 @@ footer {
   margin-top: 40px;
 }
 
-/* Style for the author's photo */
+/* --- AUTORFOTO --- */
 .author-photo {
-  display: block;          /* Shows the image as a block element (not inline) */
-  margin: 30px auto;       /* Adds space above and below, and centers image horizontally */
-  max-width: 250px;        /* Image will not grow larger than 250px */
-  width: 80%;              /* Image will take up 80% of its container on small screens */
-  height: auto;            /* Keeps the original image shape (no stretching) */
-
-  border-radius: 16px;     /* Makes the corners round */
-  padding: 10px;           /* Adds space inside the image box (around the image) */
-  
-  background-color: #fdf5ee; /* Light pastel background behind the image */
-  border: 2px solid #f3d8c7; /* Soft border in a Moroccan-style pastel color */
-  
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds a soft shadow for a lifted look */
+  display: block;           /* Blockelement für zentrieren */
+  margin: 30px auto;        /* Abstand oben/unten + zentriert */
+  max-width: 250px;         /* Maximale Bildbreite */
+  width: 80%;               /* Bild nimmt 80% Breite im Container */
+  height: auto;             /* Proportionen beibehalten */
+  border-radius: 16px;      /* Große Abrundung */
+  padding: 10px;            /* Innenabstand */
+  background-color: #fdf5ee; /* Heller Hintergrund */
+  border: 2px solid #f3d8c7; /* Rahmen in Korall-Ton */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Schatten für 3D Effekt */
 }
 
-
-/* --- RESPONSIVE --- */
+/* --- RESPONSIVE DESIGN --- */
+/* Für Bildschirme kleiner als 768px */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Navigation untereinander */
+    align-items: center;    /* Zentriert */
   }
-
   nav a {
-    width: 100%;
-    text-align: center;
+    width: 100%;            /* Link nimmt ganze Breite */
+    text-align: center;     /* Text zentriert */
   }
-
   .gallery-img {
-    width: 100px;
+    width: 100px;           /* Kleinere Bilder in der Galerie */
   }
 }
