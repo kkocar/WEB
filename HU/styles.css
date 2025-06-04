@@ -16,6 +16,7 @@ body {
 
 nav, footer, h1, h2, p{
   font-family: Verdana, sans-serif;
+  margin-bottom: 5px;
 }
 
 /* --- HEADER --- */
@@ -69,8 +70,8 @@ nav {
 /* --- MAIN CONTAINER --- */
 main {
   max-width: 1000px;            /* The main content area will not get wider than 1000px, even on big screens */
-  margin: 20px auto;            /* Adds 20px space above and below, and centers the main area horizontally */
-  padding: 20px;                /* Adds 20px space inside the main box (top, right, bottom, left) */
+  margin: 10px auto;            /* Adds 20px space above and below, and centers the main area horizontally */
+  padding: 10px;                /* Adds 20px space inside the main box (top, right, bottom, left) */
   background-color: #fef8f2;    /* Very light pastel background to make content easy on the eyes */
   border-radius: 10px;          /* Slightly rounded corners for a softer look */
   box-shadow: 0 0 5px rgba(199, 7, 7, 0.253); /* Adds a soft red shadow around the box for depth */
@@ -94,10 +95,11 @@ ul,li {
 /* --- ARTICLE --- */
 article {
   margin-bottom: 20px;
+  margin-top: 8px;
 }
 
 p{
-    padding: 5px;
+    padding: 10px;
 }
 
 p a{
@@ -111,6 +113,16 @@ blockquote {
   color: #666;
   font-style: italic;
   margin: 20px 0;
+}
+
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 150px;
+  border-radius: 10px;
 }
 
 /* --- FORM --- */
@@ -167,7 +179,7 @@ button:hover {
   
 }
 .gallery-img:hover {
-  transform: scale(1.05);
+  transform: scale(3);
 }
 /* Checkbox styling - aligned left, inline */
 .checkbox-group {
