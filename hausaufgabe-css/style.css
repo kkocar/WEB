@@ -136,7 +136,8 @@ article h2{
 }
 
 .product-item {
-  flex: 1 1 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
   background-color: var(--background-white);
   border: 1px solid #ccc;
   border-radius: 8px;
