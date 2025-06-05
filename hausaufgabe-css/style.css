@@ -9,7 +9,7 @@ body {
   font-family: Arial,Helvetica, sans-serif;
   line-height: 1.6;
   color: #333;
-  max-width: 1200px
+  
 }
 
 /* Farbvariablen */
@@ -64,6 +64,8 @@ background: rgba(0.3, 0.3, 0.3, 0.3);
 
 /* Content-Bereich */
 .content {
+    width:100%;
+    max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   background-color: var(--primary-green);
@@ -121,12 +123,13 @@ article h2{
 }
 .products {
   display: flex;
-  flex-wrap: nowrap; /* Important: prevents wrapping */
+  flex-wrap: wrap; 
   gap: 10px; /* gap between items */
   justify-content: space-between; /* Stretch evenly */
   margin: 0;
   padding: 0;
-  max-width: auto;
+  max-width: auto
+;
 }
 
 .product-item {
@@ -206,6 +209,9 @@ background-color: var(--primary-green);
     width: 100%;
     min-width: 0;
   }
+  .product-item {
+  flex: 1 1 100%;
+}
 
   .hero h2 {
     font-size: 1.8rem;
