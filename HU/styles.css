@@ -164,6 +164,29 @@ button:hover {
   background-color: #d8e2b8; /* Helleres Grün beim Hover */
 }
 
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  flex: 0 0 120px; /* Feste Breite */
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  flex: 1;
+  max-width: 400px;
+}
+
+textarea {
+  resize: vertical;
+}
+
 /* --- GALERIE --- */
 .gallery-container {
   display: flex;             /* Flexbox für Bildergalerie */

@@ -36,37 +36,37 @@
       <!-- FIELDSET for grouping -->
       <fieldset>
         <legend>Contact Form</legend>
-
-        <!-- Thema auswählen -->
-        <label for="thema">Topic:*</label>
-        <select id="thema" name="thema" required>
-          <option value="">Please choose</option>
-          <option value="general">General Inquiry</option>
-          <option value="problem">Report a Problem</option>
-          <option value="book">Book Request</option>
-          <option value="other">Other</option>
-        </select>
-        <br><br>
-
-        <!-- Vorname -->
-        <label for="vorname">First Name:*</label>
-        <input type="text" id="vorname" name="vorname" required>
-        <br><br>
-
-        <!-- Nachname -->
-        <label for="nachname">Last Name:*</label>
-        <input type="text" id="nachname" name="nachname" required>
-        <br><br>
-
-        <!-- E-Mail -->
-        <label for="email">E-Mail:*</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-
-        <!-- Nachricht -->
-        <label for="nachricht">Message:*</label>
-        <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
-        <br><br>
+      
+        <div class="form-group">
+          <label for="thema">Topic:*</label>
+          <select id="thema" name="thema" required>
+            <option value="">Please choose</option>
+            <option value="general">General Inquiry</option>
+            <option value="problem">Report a Problem</option>
+            <option value="book">Book Request</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+          <label for="vorname">First Name:*</label>
+          <input type="text" id="vorname" name="vorname" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="nachname">Last Name:*</label>
+          <input type="text" id="nachname" name="nachname" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="email">E-Mail:*</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="nachricht">Message:*</label>
+          <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+        </div>
       </fieldset>
 
       <!-- Datei-Upload -->
@@ -75,7 +75,7 @@
       <br><br>
 
       <!-- Checkbox Zustimmung -->
-       <section class="">
+       <section>
       <label >
   <input type="checkbox" id="marketing" name="marketing">
   I agree to the use of my data for marketing purposes.

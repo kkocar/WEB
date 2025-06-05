@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+
+    <titel>Produktliste</titel>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Produktkatalog</h1>
+        
+        <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Produkt suchen...">
+        <button id="loadButton">Produkte laden</button>
+        </div>
+        
+        <div id="loading" style="display: none;">Lade Produkte...</div>
+        
+        <div id="errorMessage" style="display: none; color: red;"></div>
+        
+        <div class="products" id="productContainer"></div>
+       </div>
+
+
+    <script src='main.js' defer></script>
+</body>
+
+
+</html>
