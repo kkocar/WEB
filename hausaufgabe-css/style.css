@@ -43,7 +43,7 @@ header h1 {
 /* Hero */
 .hero {
     flex: 1;
-    height: 50vh;
+    
 /* Hintergrundbild */
 background-image: url("website/images/hero_fullsize.jpg");
 background-size: cover;
@@ -67,7 +67,7 @@ background: rgba(0.3, 0.3, 0.3, 0.3);
 /* Content-Bereich */
 .content {
       flex: 1;
-  height: 50vh;
+  
   display: flex;
   
   background-color: var(--primary-green);
@@ -197,11 +197,7 @@ background-color: var(--primary-green);
 .footer-bottom a:hover {
   text-decoration: none;
 }
-.page-container {
-  max-width: 1200px;    /* oder 1140px, je nach Wunsch */
-  margin: 0 auto;       /* zentriert den Inhalt auf der Seite */
-  padding: 0 1rem;      /* etwas Abstand links/rechts auf kleinen Bildschirmen */
-}
+
 /* Responsives Layout */
 @media (max-width: 600px) {
   .content {

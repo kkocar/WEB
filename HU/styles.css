@@ -143,7 +143,7 @@ input, textarea {
   border: 1px solid #ccc;    /* Hellgrauer Rahmen */
   border-radius: 4px;        /* Abgerundete Ecken */
   font-size: 10px;           /* Kleine Schrift */
-  width: 100%;               /* Breite an Container anpassen */
+               
   font-family: sans-serif;   /* Schriftart für Eingabe */
 }
 
