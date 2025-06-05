@@ -51,17 +51,14 @@ background-position: center;
 /* Flexbox */
 display: flex;
 /* Setzt die hohe des hero Bereiches */
-padding: 10rem 0;
+padding: 180px 0;
 }
 .hero h2 {
-/* Abstaende */
-margin: 0;
-padding: 2rem;
 width: 100%; 
 /* Zentriert den Text */
 text-align: center;
 /* Schriftart und Groesse */
-font-size: 3rem;
+font-size: 3.8rem;
 color: whitesmoke;
 /* Hintergrundfarbe */
 background: rgba(0.3, 0.3, 0.3, 0.3);
@@ -117,7 +114,7 @@ main h2{
     color: var(--dark-green);
     
 }
-.product-item, h3 {
+.product-item h3 {
   color: var(--dark-green);
 }
 .product-item p {
@@ -131,8 +128,6 @@ article h2{
   align-items: center;
   gap: 10px; /* gap between items */
   margin: 0 auto;
-
-  max-width: auto;
 }
 
 .product-item {
@@ -202,10 +197,17 @@ background-color: var(--primary-green);
 .footer-bottom a:hover {
   text-decoration: none;
 }
-
+.page-container {
+  max-width: 1200px;    /* oder 1140px, je nach Wunsch */
+  margin: 0 auto;       /* zentriert den Inhalt auf der Seite */
+  padding: 0 1rem;      /* etwas Abstand links/rechts auf kleinen Bildschirmen */
+}
 /* Responsives Layout */
 @media (max-width: 600px) {
   .content {
+    flex-direction: column;
+  }
+  .products{
     flex-direction: column;
   }
 
