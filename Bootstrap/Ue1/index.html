@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mustermann Baumarkt</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS einbinden -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item "><a class="nav-link" href="#">Startseite</a></li>
+                <li class="nav-item "><a class="nav-link" href="#">Werkzeuge</a></li>
+                <li class="nav-item "><a class="nav-link" href="#">Baumaterial</a></li>
+                <li class="nav-item "><a class="nav-link" href="#">Elektro</a></li>
+                <li class="nav-item "><a class="nav-link" href="#">Garten</a></li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Produkte suchen...">
+                <button class="btn btn-outline-light" type="submit">Suchen</button>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero-Bereich -->
+        <div class="container rounded-3 bg-light mt-5 py-5">
+            <div class="container bg-rabatt p-5 px-5 mb-4">
+                <h1 class="bg-light col-10 mb-4">Frühjahrsrabatt: 20% auf alle Gartengeräte!</h1>
+                <p class="bg-light col-6">
+                    Bereiten Sie Ihren Garten auf den Frühling vor mit hochwertigen Werkzeugen
+                    und Geräten von Mustermann Hardware. Jetzt mit Sonderrabatt auf das gesamte Garten-Sortiment.
+                </p>
+                <button class=" btn btn-primary btn-lg">Angebote entdecken</button>
+            </div>
+        </div>
+
+        <!-- Aktuelle Angebote -->
+        <div class="container">
+            <h2 class="display-4">Aktuelle Angebote</h2>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card"> 
+                        <img src="bohrmaschine.png" alt="Bohrmaschine" class="card-img-top ">
+                        <div class="card-body">
+                            <h5 class="card-title">Akku-Bohrschrauber</h5>
+                            <p class=" card-text">Profi-Bohrschrauber mit 2 Akkus und Koffer</p>
+                            <p class="fw-bold">€99,99 <span
+                                    class="text-decoration-line-through text-muted">€129,99</span></p>
+                            <a class="btn btn-primary mb-3" href="#">In den Warenkorb</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="card ">
+                        <img class="card-img-top " src="werkzuegkoffer.png" alt="Werkzeugset">
+                        <div class="card-body">
+                            <h5 class="card-title">Werkzeugkoffer, 215-tlg.</h5>
+                            <p class=" card-text">Komplettset mit Schraubendreher, Zangen und mehr</p>
+                            <p class="fw-bold">€149,99 <span
+                                    class="text-decoration-line-through text-muted">€199,99</span></p>
+                            <a class="btn btn-primary mb-3" href="#">In den Warenkorb</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="card ">
+                        <img class="card-img-top " src="rasenmaeher.png" alt="Rasenmäher">
+                        <div class="card-body">
+                            <h5 class="card-title">Benzin-Rasenmäher</h5>
+                            <p class=" card-text">Mit Radantrieb und 50L Fangkorb</p>
+                            <p class="fw-bold">€279,99 <span
+                                    class="text-decoration-line-through text-muted">€349,99</span></p>
+                            <a class="btn btn-primary mb-3" href="#">In den Warenkorb</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="card ">
+                        <img class="card-img-top " src="wandfarbe.png" alt="Farbe">
+                        <div class="card-body">
+                            <h5 class="card-title">Wandfarbe, 10L</h5>
+                            <p class=" card-text">Hochwertige Dispersionsfarbe, verschiedene Farbtöne</p>
+                            <p class="fw-bold">€39,99 <span class="text-decoration-line-through text-muted">€49,99</span></p>
+                            <a class="btn btn-primary mb-3" href="#">In den Warenkorb</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <h5 class=" list-unstyled text-small">Mustermann Hardware</h5>
+                <small class="text-muted">&copy; 2022-2025</small>
+            </div>
+            <div>
+                <h5 class=" list-unstyled text-small">Filialen</h5>
+                <ul>
+                    <li><a class="link-secondary" href="#">Wien</a></li>
+                    <li><a class="link-secondary" href="#">Graz</a></li>
+                    <li><a class="link-secondary" href="#">Linz</a></li>
+                    <li><a class="link-secondary" href="#">Salzburg</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class=" list-unstyled text-small">Service</h5>
+                <ul>
+                    <li><a class="link-secondary" href="#">Beratung</a></li>
+                    <li><a class="link-secondary" href="#">Werkzeugverleih</a></li>
+                    <li><a class="link-secondary" href="#">Gerätewartung</a></li>
+                    <li><a class="link-secondary" href="#">Holzzuschnitt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class=" list-unstyled text-small">Über uns</h5>
+                <ul>
+                    <li><a class="link-secondary" href="#">Team</a></li>
+                    <li><a class="link-secondary" href="#">Geschichte</a></li>
+                    <li><a class="link-secondary" href="#">Karriere</a></li>
+                    <li><a class="link-secondary" href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
