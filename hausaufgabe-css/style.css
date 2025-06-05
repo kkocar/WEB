@@ -208,6 +208,7 @@ background-color: var(--primary-green);
     flex-direction: column;
   }
   .products{
+    display:flex;
     flex-direction: column;
   }
 
